@@ -1,2 +1,10 @@
 # meshcentral-builds
-An Docker image for MeshCentral 2. http://www.meshcommander.com/meshcentral2
+Docker container based on https://github.com/Ylianst/MeshCentral
+
+Volumes required for persistant storage:
+- home/node/meshcentral/meshcentral-files
+- home/node/meshcentral/meshcentral-data
+
+Optional volumes:
+- home/node/meshcentral/meshcentral-backup
+- home/node/meshcentral/meshcentral-web
