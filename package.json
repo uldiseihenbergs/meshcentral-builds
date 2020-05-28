@@ -1,0 +1,22 @@
+{
+  "name": "meshserver2",
+  "version": "1.0.0",
+  "description": "Web based remote computer management and file server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uldise",
+  "license": "MIT",
+  "dependencies": {},
+  "optionalDependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ylianst/MeshCentral.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ylianst/MeshCentral/issues"
+  },
+  "homepage": "https://github.com/Ylianst/MeshCentral.git#readme"
+}
