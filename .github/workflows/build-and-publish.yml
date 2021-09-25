@@ -28,8 +28,16 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/uldiseihenbergs/meshcentral-builds
+          images: |
+            ghcr.io/uldiseihenbergs/meshcentral-builds
+            uldiseihenbergs/meshcentral
 
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          
       - name: Login to Github Packages
         uses: docker/login-action@v1
         with:
@@ -38,6 +46,7 @@ jobs:
           password: ${{ secrets.GHCR_PAT }}
 
       - name: Build image and push to Docker Hub and GitHub Container Registry
+        id: docker_build
         uses: docker/build-push-action@v2
         with:
           # relative path to the place where source code with Dockerfile is located
