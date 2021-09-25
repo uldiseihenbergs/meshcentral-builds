@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: uldiseihenbergs/meshcentral-builds
+          images: ghcr.io/uldiseihenbergs/meshcentral-builds
 
       - name: Login to Github Packages
         uses: docker/login-action@v1
