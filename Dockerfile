@@ -1,4 +1,4 @@
-FROM node:14-slim
+FROM node:16-slim
 RUN apt-get update && apt-get -y install libcap2-bin \
   && rm -rf /var/lib/apt/lists/* \
   && setcap cap_net_bind_service=+ep '/usr/local/bin/node'
