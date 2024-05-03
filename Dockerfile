@@ -7,6 +7,6 @@ COPY package*.json ./
 RUN chown -R node:node /home/node/meshcentral/*
 USER node
 WORKDIR /home/node/meshcentral
-RUN npm install meshcentral@1.1.16
+RUN npm install meshcentral@1.1.22
 
 ENTRYPOINT node ./node_modules/meshcentral/meshcentral.js
