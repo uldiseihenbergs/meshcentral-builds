@@ -44,7 +44,7 @@ jobs:
 
       - name: Build image and push to Docker Hub and GitHub Container Registry
         id: docker_build
-        uses: docker/build-push-action@v6.7.0
+        uses: docker/build-push-action@v6.18.0
         with:
           # relative path to the place where source code with Dockerfile is located
           context: .
